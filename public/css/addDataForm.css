@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Fax";
+    scroll-behavior: smooth;
+    /* border: 0.5px dotted green; */
+    /* color: azure; */
+}
+
+body {
+    background-color: rgb(226, 233, 229);
+}
+
+.container {
+    border-radius: 33px;
+}
+
+#header {
+    background-color: rgb(79, 121, 98);
+    border-radius: 33px 33px 0 0;
+    padding: 15px 0 9px 0;
+    margin-bottom: 3px;
+    color: aliceblue;
+}
+
+.header {
+    font-size: 27px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.card {
+    border-radius: 33px;
+    box-shadow: -10px -10px 56px #2c3b37;
+}
+
+.card-body {
+    background-color: rgb(233, 240, 236);
+    border-radius: 0 0 33px 33px;
+    color: rgb(0, 0, 0);
+    /* margin: 0; */
+    padding-top: 0;
+}
+
+#btn {
+    border-radius: 33px 0 33px 0;
+}
+
+.form-control {
+    border-radius: 33px;
+}

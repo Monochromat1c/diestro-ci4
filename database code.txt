@@ -1,0 +1,28 @@
+CREATE DATABASE diestro_ci4_db;
+
+USE diestro_ci4_db;
+
+CREATE TABLE genders(
+	gender_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    gender VARCHAR(55) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO genders(gender) VALUES('Male');
+INSERT INTO genders(gender) VALUES('Female');
+INSERT INTO genders(gender) VALUES('Others');
+
+CREATE TABLE users(
+	user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(55) NOT NULL,
+    middle_name VARCHAR(55) DEFAULT NULL,
+    last_name VARCHAR(55) NOT NULL,
+    age INT NOT NULL,
+    gender_id INT NOT NULL,
+    email VARCHAR(55) NOT NULL UNIQUE,
+    password VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY(gender_id) REFERENCES genders(gender_id)
+);
