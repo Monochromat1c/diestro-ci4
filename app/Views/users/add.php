@@ -27,7 +27,13 @@
                 </div>
                 <div class="mb-3">
                     <label for="age">Age:</label>
-                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter your age"/>
+                    <input type="text" class="form-control" id="age" name="age" placeholder="Enter your age"/>
+                </div>
+                <div class="mb-3">
+                    <label for="age">Gender</label>
+                    <select class="form-select">
+                        <option value="" selected>Select your gender</option>
+                    </select>
                 </div>
                 <div class="mb-3">
                     <label for="email">Email:</label>

@@ -47,6 +47,6 @@ body {
     border-radius: 33px 0 33px 0;
 }
 
-.form-control {
+.form-control, .form-select {
     border-radius: 33px;
 }
