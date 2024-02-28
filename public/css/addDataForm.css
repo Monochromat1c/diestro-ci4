@@ -45,8 +45,18 @@ body {
 
 #btn {
     border-radius: 33px 0 33px 0;
+    background-color: rgb(79, 121, 98);
+    border-color: rgb(79, 121, 98);;
+    transition: background-color 1000ms ease-out, color 1000ms ease-out, border-color 1000ms ease-out;
+    color: rgb(255, 255, 255);
 }
 
+#btn:hover {
+    background-color: rgb(131, 175, 151);
+    border-color: rgb(131, 175, 151);
+    color: rgb(0, 0, 0);
+    transition: 1000ms;
+}
 .form-control, .form-select {
     border-radius: 33px;
 }
