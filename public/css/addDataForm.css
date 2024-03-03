@@ -15,6 +15,7 @@ body {
 .container {
     border-radius: 33px;
     max-width: 69svh;
+    margin-bottom: 3svh;
 }
 
 #header {

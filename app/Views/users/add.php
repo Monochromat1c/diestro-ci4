@@ -30,10 +30,13 @@
                     <input type="text" class="form-control" id="age" name="age" placeholder="Enter your age"/>
                 </div>
                 <div class="mb-3">
-                    <label for="age">Gender</label>
+                <label for="age">Gender</label>
                     <select class="form-select">
-                        <option value="" selected>Select your gender</option>
-                    </select>
+                        <option value="" selected>Select your gender:</option>
+                        <?php foreach($genders as $gender): ?>
+                        <option value="<?=$gender->gender_id?>"><?=$gender->gender?></option>
+                        <?php endforeach ?>
+                    </select>   
                 </div>
                 <div class="mb-3">
                     <label for="email">Email:</label>

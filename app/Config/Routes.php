@@ -11,3 +11,5 @@ $routes->get('/users/delete','UserController::deleteUser');
 $routes->get('/users/edit','UserController::editUser');
 $routes->get('/users/list','UserController::listUser');
 $routes->get('/users/view','UserController::viewUser');
+
+$routes->post('/storeUser','UserController::addUser');
